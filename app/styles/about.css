@@ -1,0 +1,47 @@
+.lyaboutUs,
+.lyContactUs {
+	width: 100%;
+	background: white;
+}
+
+.abo_title {
+	height: 120px;
+	text-align: center;
+}
+
+.abo_title h1 {
+	font: 35px/120px "微软雅黑";
+	color: #F67A82;
+	font-weight: 400;
+}
+
+.lyBanner,.con_text {
+	padding: 30px 0px;
+	background: none repeat scroll 0% 0% #FFF
+}
+
+.banner_text,.con_text  {
+	text-align: center;
+	color: #222;
+}
+
+.banner_text p,.con_text p {
+	height: 32px;
+	margin-bottom: 16px;
+	margin: 0px 0px 11px;
+	font: 18px/32px "微软雅黑";
+	font-weight: 300;
+}
+
+
+
+.ly_banner {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.ly_banner img {
+	width: 100%;
+}

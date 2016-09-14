@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<!-- build:css(.) styles/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="bower_components/summernote/dist/summernote.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/home.css">
+		<link rel="stylesheet" href="styles/flowershop.css">
+		<link rel="stylesheet" href="styles/wedding.css">
+		<link rel="stylesheet" href="styles/service.css">
+		<link rel="stylesheet" href="styles/about.css">
+		<link rel="stylesheet" href="styles/relation.css">
+		<!-- endbuild -->
+	</head>
+
+	<body ng-app="1yeoman">
+		<!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+		<!-- Add your site or application content here -->
+		<div class="nav">
+			<div class="nav1">
+				<a ui-sref="home" ui-sref-active="hover">首页</a>
+				<a ui-sref="flowershop" ui-sref-active="hover">花店</a>
+				<a ui-sref="wedding" ui-sref-active="hover">婚礼</a>
+				<a ui-sref="service" ui-sref-active="hover">服务</a>
+				<a ui-sref="about" ui-sref-active="hover">关于</a>
+				<a ui-sref="relation" ui-sref-active="hover">联系</a>
+			</div>
+		</div>
+		<div ui-view=""></div>
+		<div class="foot">
+			<div class="foot_nav">
+				<a ui-sref="flowershop" ui-sref-active="hover">花店</a><span>/</span>
+				<a ui-sref="wedding" ui-sref-active="hover">婚礼</a><span>/</span>
+				<a ui-sref="service" ui-sref-active="hover">服务</a><span>/</span>
+				<a ui-sref="about" ui-sref-active="hover">关于</a><span>/</span>
+				<a ui-sref="relation" ui-sref-active="hover">联系</a>
+			</div>
+			<div class="ending"></div>
+		</div>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+
+		<!-- build:js(.) scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="bower_components/summernote/dist/summernote.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:js({.tmp,app}) scripts/scripts.js -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/controllers/main.js"></script>
+		<script src="scripts/controllers/home.js"></script>
+		<script src="scripts/controllers/flowershop.js"></script>
+		<script src="scripts/controllers/wedding.js"></script>
+		<script src="scripts/controllers/service.js"></script>
+		<script src="scripts/controllers/about.js"></script>
+		<script src="scripts/controllers/relation.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>
